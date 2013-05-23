@@ -181,7 +181,7 @@ function Main() {
 
  
 	/*********************************************************
-	*  メインルーチン
+	*  初期化
 	*********************************************************/
 
     
@@ -216,5 +216,7 @@ function Main() {
 	})
 
 	//デフォルト位置にマーカーを設置
-	Markers.setMember(latlong, 'test' );	  
+	Markers.setMember(latlong, 'test' );
+	//緯度経度項目に初期値を設定
+	UpdateLatLongValue(latlong); 
 }
